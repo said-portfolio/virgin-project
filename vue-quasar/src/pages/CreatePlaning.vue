@@ -2,7 +2,7 @@
   <div class="form-container">
     <q-stepper v-model="activeStep" flat animated>
       <!-- Step 1 -->
-      <q-step name="step1" title="Select Employees" subtitle="Choose the required employees">
+      <q-step name="step1" title="Definir les agents" subtitle="Choose the required employees">
         <div class="form-inputs">
           <q-input v-model="title" label="Title" outlined color="secondary" class="gap-1" />
           <JournalisteInput class="gap-1" />
@@ -15,7 +15,7 @@
       </q-step>
 
       <!-- Step 2 -->
-      <q-step name="step2" title="Select Dates" subtitle="Choose start and end dates">
+      <q-step name="step2" title="Definir date de début" subtitle="Choose start and end dates">
         <div class="form-inputs">
           <div class="date-picker gap-1">
             <q-date
@@ -40,7 +40,7 @@
           <q-btn label="Previous" color="primary" @click="activeStep = 'step1'" class="form-btn" />
         </div>
       </q-step>
-      <q-step name="step3" title="Select Dates" subtitle="Choose start and end dates">
+      <q-step name="step3" title="Definir date de fin" subtitle="Choose start and end dates">
         <div class="form-inputs">
           <div class="date-picker gap-1">
             <div class="date-picker">
